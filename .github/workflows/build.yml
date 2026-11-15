@@ -23,7 +23,7 @@ jobs:
       - name: Compila APK
         run: gradle assembleRelease --no-daemon
         working-directory: ${{ env.DIR }}
-      - uses: actions/upload-artifact@v5
+      - uses: actions/upload-artifact@v6
         with:
           name: Mail-APK
           path: ${{ env.DIR }}/app/build/outputs/apk/release/*.apk
